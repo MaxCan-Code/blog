@@ -1,0 +1,24 @@
+<style>
+  :root {
+    color-scheme: light dark;
+  }
+  body {
+    color: CanvasText;
+    background: Canvas;
+  }
+  .markdown-body {
+    color: inherit;
+    background: transparent;
+  }
+  .markdown-body code,
+  .markdown-body pre,
+  .highlight {
+    background: color-mix(in srgb, Canvas 92%, CanvasText) !important;
+    color: CanvasText;
+  }
+  @media (prefers-color-scheme: dark) {
+    .highlight * {
+      color: inherit !important;
+    }
+  }
+</style>
