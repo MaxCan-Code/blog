@@ -1,4 +1,15 @@
 <style>
+  @font-face {
+    font-family: "APL387";
+    src: url("https://dyalog.github.io/APL387/APL387.woff2") format("woff2");
+    font-display: swap;
+  }
+  .markdown-body code,
+  .markdown-body pre,
+  .markdown-body kbd,
+  .markdown-body tt {
+    font-family: "APL387", SFMono-Regular, Consolas, monospace;
+  }
   :root {
     color-scheme: light dark;
   }
@@ -16,7 +27,23 @@
     background: color-mix(in srgb, Canvas 92%, CanvasText) !important;
     color: CanvasText;
   }
+  .markdown-body table tr {
+    background-color: Canvas;
+    border-top-color: color-mix(in srgb, Canvas 75%, CanvasText);
+  }
+  .markdown-body table tr:nth-child(2n) {
+    background-color: color-mix(in srgb, Canvas 96%, CanvasText);
+  }
+  .markdown-body table th,
+  .markdown-body table td {
+    border-color: color-mix(in srgb, Canvas 85%, CanvasText);
+  }
+  .markdown-body h1,
+  .markdown-body h2 {
+    border-bottom-color: color-mix(in srgb, Canvas 85%, CanvasText);
+  }
   @media (prefers-color-scheme: dark) {
+    a { color: #58a6ff; }
     .highlight * {
       color: inherit !important;
     }
